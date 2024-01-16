@@ -23,12 +23,13 @@ namespace WindowsFormsApp1
 
             this.userList = userList;
             this.loggedInUser = loggedInUser;
+            this.loginPage = loginPage;
 
             this.usernameLabelTxt.Text = $"Sveiki prisijunge, {loggedInUser.Username}";
             this.nameLabelTxt.Text = loggedInUser.Name;
             this.surnameLabelTxt.Text = loggedInUser.Surname;
             this.dateLabelTxt.Text = loggedInUser.BirthDate.ToString();
-            this.loginPage = loginPage;
+            
 
             if (loggedInUser.IsAdmin == true)
             {
@@ -59,8 +60,6 @@ namespace WindowsFormsApp1
 
                     this.profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     loggedInUser.ImagePath = selectedImagePath;
-                    
-
                 }
             }
         }

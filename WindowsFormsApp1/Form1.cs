@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
     public partial class MainLoginPage : Form
     {
 
-        //public string username;
-        //public string password;
+        
         private List<User> userList;
 
 
